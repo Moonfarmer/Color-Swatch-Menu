@@ -1,0 +1,144 @@
+
+.banner .banner-container #menu-toggle {
+  margin-left: auto;
+}
+#menu-toggle {
+  color: #fff;
+  font-size: 3.125rem;
+  padding: 30px 0 0;
+  line-height: 0;
+}
+#menu-toggle, #menu-toggle:active, #menu-toggle:focus, #menu-toggle:hover {
+  background: 0 0;
+  border: none;
+  z-index: 9;
+}
+button, input[type=button], input[type=reset], input[type=submit] {
+  border: none;
+  border-radius: 0;
+}
+
+
+.color-swatch-menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.color-swatch-menu:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+i {
+  color: black;
+}
+
+.swatch { 
+  height: 230px;
+  width: 67px;
+  position: absolute;
+  margin-left: -172px;
+
+
+  -webkit-box-shadow: 0px 0px 7px 0.5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 7px 0.5px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 7px 0.5px rgba(0,0,0,0.75);
+}
+
+
+.red {
+  -ms-transform: rotate(-70deg);
+  -webkit-transform: rotate(-70deg);
+  transform: rotate(-70deg);
+  background-color: #880005;
+  margin-top: -110px;
+}
+
+.orange {
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  background-color: #995643;
+  margin-top: -71px;
+  margin-left: -177px;
+}
+
+.yellow {
+  -ms-transform: rotate(-110deg);
+  -webkit-transform: rotate(-110deg);
+  transform: rotate(-110deg);
+  background-color: #998543;
+  margin-top: -30px;
+  margin-left: -171px;
+}
+
+.green {
+  -ms-transform: rotate(50deg);
+  -webkit-transform: rotate(50deg);
+  transform: rotate(50deg);
+  background-color: #4D9943;
+  margin-top: 8px;
+  margin-left: -150px;
+}
+
+.turquoise {
+  -ms-transform: rotate(30deg);
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+  background-color: #43998B;
+  margin-top: 32px;
+  margin-left: -119px;
+}
+
+.blue {
+
+  -ms-transform: rotate(10deg);
+  -webkit-transform: rotate(10deg);
+  transform: rotate(10deg);
+  background-color: #437899;
+  margin-top: 43px;
+  margin-left: -87px;
+}
+
+.indigo {
+  -ms-transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+  background-color: #434A99;
+  margin-top: 45px;
+  margin-left: -41px;
+}
+
+.purple {
+  -ms-transform: rotate(-30deg);
+  -webkit-transform: rotate(-30deg);
+  transform: rotate(-30deg);
+  background-color: #5E4399;
+  margin-top: 32px;
+  margin-left: -8px;
+}
+
+.violet {
+  -ms-transform: rotate(-50deg);
+  -webkit-transform: rotate(-50deg);
+  transform: rotate(-50deg);
+  background-color: #8A4399;
+  margin-top: 3px;
+  margin-left: 23px;
+}
+
+
+.ico-menu {
+  font-size: 2em;
+  background-image: url(hamburger_menu.svg);
+  height: 45px;
+  width: 45px;
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: -50px;
+  margin-left: -75px;
+  margin-top: -5px;
+}
