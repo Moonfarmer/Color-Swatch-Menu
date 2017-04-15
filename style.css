@@ -1,7 +1,4 @@
 
-.banner .banner-container #menu-toggle {
-  margin-left: auto;
-}
 #menu-toggle {
   color: #fff;
   font-size: 3.125rem;
@@ -9,30 +6,31 @@
   line-height: 0;
 }
 #menu-toggle, #menu-toggle:active, #menu-toggle:focus, #menu-toggle:hover {
-  background: 0 0;
-  border: none;
+
   z-index: 9;
+  background-color: #437899;
+  height: 61px;
+  position: absolute;
+  margin-top: 8px;
+  width: 61px;
+  margin-left: -5px;
+  border-radius: 100px;
+  -webkit-box-shadow: 0px 0px 7px 0.5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 7px 0.5px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 7px 0.5px rgba(0,0,0,0.75);
 }
 button, input[type=button], input[type=reset], input[type=submit] {
   border: none;
   border-radius: 0;
 }
 
+.hide {
+  display: none;
+}
 
 .color-swatch-menu {
   display: flex;
   justify-content: flex-end;
-}
-
-
-.color-swatch-menu:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-i {
-  color: black;
 }
 
 .swatch { 
@@ -131,14 +129,12 @@ i {
 
 
 .ico-menu {
-  font-size: 2em;
   background-image: url(hamburger_menu.svg);
-  height: 45px;
-  width: 45px;
+  height: 40px;
+  width: 40px;
   position: absolute;
   background-size: contain;
   background-repeat: no-repeat;
-  margin-left: -50px;
-  margin-left: -75px;
-  margin-top: -5px;
+  margin-left: -20px;
+  margin-top: -35px; 
 }
