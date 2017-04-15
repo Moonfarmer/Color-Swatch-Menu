@@ -59,8 +59,17 @@ button {
   -webkit-box-shadow: 0px 0px 7px 0.5px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 0px 7px 0.5px rgba(0,0,0,0.75);
   box-shadow: 0px 0px 7px 0.5px rgba(0,0,0,0.75);
+
+transition: all 700ms cubic-bezier(0.68, -1.55, 0.365, 1.55);
 }
 
+.not {
+  padding-top: 10px;
+}
+
+.okay {
+  padding-top: inherit;
+}
 
 .red {
   -ms-transform: rotate(-70deg);
