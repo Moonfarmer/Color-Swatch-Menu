@@ -12,10 +12,10 @@ body {
 #menu-toggle, #menu-toggle:active, #menu-toggle:focus, #menu-toggle:hover {
   z-index: 9;
   background-color: #437899;
-  height: 61px;
+  height: 80px;
   position: absolute;
   margin-top: 8px;
-  width: 61px;
+  width: 80px;
   margin-left: -5px;
   border-radius: 100px;
   -webkit-box-shadow: 0px 0px 7px 0.5px rgba(0,0,0,0.75);
@@ -156,14 +156,34 @@ transition: all 700ms cubic-bezier(0.68, -1.55, 0.365, 1.55);
   margin-left: 23px;
 }
 
+.line {
+    background-color: white;
+    height: 7px;
+    width: 45px;
+    border-radius: 20px;
+    margin-left: 18px;
+    margin-bottom: -20px;
+    margin-top: -7px;
+}
 
-.ico-menu {
-  background-image: url(hamburger_menu.svg);
-  height: 40px;
-  width: 40px;
-  position: absolute;
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin-left: -20px;
-  margin-top: -35px; 
+.close {
+  transition: all 300ms cubic-bezier(0.68, -1.55, 0.365, 1.55);
+}
+
+.top.close {
+  transform: rotate(-45deg);
+    margin-top: -13px;
+}
+
+.middle.close {
+  opacity: 0;
+}
+
+.bottom.close {
+      transform: rotate(45deg);
+    margin-top: 25px;
+}
+
+#menu-toggle.close {
+  padding-top: 20px;
 }
