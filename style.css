@@ -28,6 +28,34 @@ button {
   border-radius: 0;
 }
 
+body.blue-color {
+  background-color: #D5EFFF;
+}
+#menu-toggle.blue-color { 
+  background-color: #437899;
+}
+
+body.indigo-color {
+  background-color: #DFE2FE;
+}
+#menu-toggle.indigo-color {
+  background-color: #434A99
+}
+
+body.green-color {
+  background-color: #B7E7B0;
+}
+#menu-toggle.green-color {
+  background-color: #4D9943;
+}
+
+body.orange-color {
+  background-color: #F4D7CE;
+}
+#menu-toggle.orange-color {
+  background-color: #995643;
+}
+
 .hide {
   margin-top: -195px !important;
   margin-right: -245px !important;
