@@ -1,5 +1,7 @@
 body { 
   overflow-x: hidden;
+  zoom: 0;
+  transition: 300ms background ease;
 }
 
 #menu-toggle {
@@ -104,6 +106,7 @@ body.violet-color {
 }
 
 .swatch-container {
+  position: absolute;
 }
 
 .color-swatch-menu {
