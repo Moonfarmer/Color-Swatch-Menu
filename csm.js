@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+  // primarily click handlers and toggling of classes
+
   var colorClasses = ['red-bg', 'orange-bg', 'yellow-bg', 'green-bg', 'turquoise-bg', 'blue-bg', 'indigo-bg', 'purple-bg', 'violet-bg'];
   var colors = ['red', 'orange', 'yellow', 'green', 'turquoise', 'blue', 'indigo', 'purple', 'violet'];
 
@@ -21,11 +23,18 @@ $(document).ready(function() {
   });
 });
 
-
+// utility function to assist in finding current color against array of classes
 function intersect(a, b) {
-  var t;
-  if (b.length > a.length) t = b, b = a, a = t; // indexOf to loop over shorter
-  return a.filter(function (e) {
-    return b.indexOf(e) > -1;
+
+  var temp;
+  if (b.length > a.length) {
+    temp = b; 
+    b = a;
+    a = temp; 
+  } 
+
+  return a.filter(function(i) {
+    return b.indexOf(i) > -1;
   });
+
 }
