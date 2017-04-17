@@ -1,20 +1,74 @@
 body { 
-  overflow-x: hidden;
   zoom: 0;
+  overflow-x: hidden;
   transition: 300ms background ease;
 }
 
-#menu-toggle {
-  color: #fff;
-  font-size: 3.125rem;
-  padding: 30px 0 0;
-  line-height: 0;
-  outline: none;
+body.blue-bg {
+  background-color: #D5EFFF;
+}
+#menu-toggle.blue-bg { 
+  background-color: #437899;
 }
 
-#menu-toggle, #menu-toggle:active, #menu-toggle:focus {
+body.indigo-bg {
+  background-color: #DFE2FE;
+}
+#menu-toggle.indigo-bg {
+  background-color: #434A99
+}
+
+body.green-bg {
+  background-color: #B7E7B0;
+}
+#menu-toggle.green-bg {
+  background-color: #4D9943;
+}
+
+body.orange-bg {
+  background-color: #F4D7CE;
+}
+#menu-toggle.orange-bg {
+  background-color: #995643;
+}
+
+body.yellow-bg {
+  background-color: #f7e9bb
+}
+#menu-toggle.yellow-bg {
+  background-color: #998543;
+}
+
+body.red-bg {
+  background-color: #f0b5b7;
+}
+#menu-toggle.red-bg {
+  background-color: #880005;
+}
+
+body.turquoise-bg {
+  background-color: #aef5e9;
+}
+#menu-toggle.turquoise-bg {
+  background-color: #43998B;
+}
+
+body.purple-bg {
+  background-color: #d9cafb;
+}
+#menu-toggle.purple-bg {
+  background-color: #5E4399;
+}
+
+body.violet-bg {
+  background-color: #efc4f9;
+}
+#menu-toggle.violet-bg {
+  background-color: #8A4399;
+}
+
+#menu-toggle {
   z-index: 9;
-  background-color: #437899;
   height: 80px;
   margin-top: 8px;
   width: 80px;
@@ -23,6 +77,8 @@ body {
   -webkit-box-shadow: 0px 0px 7px 0.5px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 0px 7px 0.5px rgba(0,0,0,0.75);
   box-shadow: 0px 0px 7px 0.5px rgba(0,0,0,0.75);
+  padding: 30px 0 0;
+  outline: none;
 }
 
 button {
@@ -30,84 +86,10 @@ button {
   border-radius: 0;
 }
 
-body.blue-color {
-  background-color: #D5EFFF;
-}
-#menu-toggle.blue-color { 
-  background-color: #437899;
-}
-
-body.indigo-color {
-  background-color: #DFE2FE;
-}
-#menu-toggle.indigo-color {
-  background-color: #434A99
-}
-
-body.green-color {
-  background-color: #B7E7B0;
-}
-#menu-toggle.green-color {
-  background-color: #4D9943;
-}
-
-body.orange-color {
-  background-color: #F4D7CE;
-}
-#menu-toggle.orange-color {
-  background-color: #995643;
-}
-
-body.yellow-color {
-  background-color: #f7e9bb
-}
-#menu-toggle.yellow-color {
-  background-color: #998543;
-}
-
-body.red-color {
-  background-color: #f0b5b7;
-}
-#menu-toggle.red-color {
-  background-color: #880005;
-}
-
-body.turquoise-color {
-  background-color: #aef5e9;
-}
-#menu-toggle.turquoise-color {
-  background-color: #43998B;
-}
-
-body.purple-color {
-  background-color: #d9cafb;
-}
-#menu-toggle.purple-color {
-  background-color: #5E4399;
-}
-
-body.violet-color {
-  background-color: #efc4f9;
-}
-#menu-toggle.violet-color {
-  background-color: #8A4399;
-}
-
 .hide {
   margin-top: -77px !important;
-  margin-right: -66px !important;
   overflow: hidden;
   opacity: 0;
-}
-
-.show {
-  margin-right: 35px;
-  margin-top: inherit;
-}
-
-.swatch-container.hide {
-  position: inherit;
-  margin-left: 65px;
 }
 
 .swatch-container.show {
@@ -124,19 +106,10 @@ body.violet-color {
   width: 67px;
   position: absolute;
   margin-left: -172px;
-
   -webkit-box-shadow: 0px 0px 7px 0.5px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 0px 7px 0.5px rgba(0,0,0,0.75);
   box-shadow: 0px 0px 7px 0.5px rgba(0,0,0,0.75);
-
-}
-
-.not {
   padding-top: 10px;
-}
-
-.okay {
-  padding-top: inherit;
 }
 
 .red {
@@ -221,13 +194,11 @@ body.violet-color {
 }
 
 .line {
-    background-color: white;
-    height: 7px;
-    width: 45px;
-    border-radius: 20px;
-    margin-left: 18px;
-    margin-bottom: -20px;
-    margin-top: -7px;
+  background-color: white;
+  height: 7px;
+  width: 45px;
+  border-radius: 20px;
+  margin: -7px auto -20px 18px;
 }
 
 .close {
@@ -236,7 +207,7 @@ body.violet-color {
 
 .top.close {
   transform: rotate(-45deg);
-    margin-top: -13px;
+  margin-top: -13px;
 }
 
 .middle.close {
@@ -244,16 +215,13 @@ body.violet-color {
 }
 
 .bottom.close {
-      transform: rotate(45deg);
-    margin-top: 25px;
+  transform: rotate(45deg);
+  margin-top: 25px;
 }
 
 #menu-toggle.close {
   padding-top: 20px;
   margin-left: -35px;
-}
-
-.open, .line.open {
 }
 
 .swatch-container.hide.open .swatch{

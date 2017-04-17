@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  var colorClasses = ['red-color', 'orange-color', 'yellow-color', 'green-color', 'turquoise-color', 'blue-color', 'indigo-color', 'purple-color', 'violet-color'];
+  var colorClasses = ['red-bg', 'orange-bg', 'yellow-bg', 'green-bg', 'turquoise-bg', 'blue-bg', 'indigo-bg', 'purple-bg', 'violet-bg'];
   var colors = ['red', 'orange', 'yellow', 'green', 'turquoise', 'blue', 'indigo', 'purple', 'violet'];
 
   $('#menu-toggle').on('click', function() {
@@ -16,7 +16,7 @@ $(document).ready(function() {
     var currentClassList = $(this).attr('class').split(/\s+/);
     var nextColor = intersect(currentClassList, colors)[0];
 
-    $('#menu-toggle, body').removeClass(prevColor).addClass(nextColor + '-color');
+    $('#menu-toggle, body').removeClass(prevColor).addClass(nextColor + '-bg');
     $('#menu-toggle').click();
   });
 });
