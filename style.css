@@ -105,7 +105,12 @@ body.violet-color {
   margin-top: inherit;
 }
 
-.swatch-container {
+.swatch-container.hide {
+  position: inherit;
+  margin-left: 65px;
+}
+
+.swatch-container.show {
   position: absolute;
 }
 
