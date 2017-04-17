@@ -92,9 +92,10 @@ body.violet-color {
 }
 
 .hide {
-  margin-top: -195px !important;
-  margin-right: -245px !important;
+  margin-top: -77px !important;
+  margin-right: -66px !important;
   overflow: hidden;
+  opacity: 0;
 }
 
 .show {
