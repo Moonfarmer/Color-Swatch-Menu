@@ -1,7 +1,19 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
 body { 
   zoom: 0;
   overflow-x: hidden;
   transition: 300ms background ease;
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
 }
 
 body.blue-bg {
@@ -92,13 +104,18 @@ button {
   opacity: 0;
 }
 
-.swatch-container.show {
+.swatch-container {
   position: absolute;
 }
 
 .color-swatch-menu {
   display: flex;
   justify-content: flex-end;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin-top: 10px;
+  margin-left: -25px;
 }
 
 .swatch { 
